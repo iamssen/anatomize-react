@@ -12,8 +12,6 @@
  * same logic and follow the same code paths.
  */
 
-var __DEV__ = 'development';
-
 let warningWithoutStack = () => {};
 
 if (__DEV__) {

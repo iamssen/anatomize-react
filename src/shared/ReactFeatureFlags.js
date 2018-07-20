@@ -9,9 +9,6 @@
 
 import invariant from 'shared/invariant';
 
-var __DEV__ = 'development';
-var __PROFILE__ = 'profile';
-
 // Exports ReactDOM.createRoot
 export const enableUserTimingAPI = __DEV__;
 

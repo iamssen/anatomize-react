@@ -13,8 +13,6 @@ import type {ReactContext} from 'shared/ReactTypes';
 
 import warningWithoutStack from 'shared/warningWithoutStack';
 
-var __DEV__ = 'development';
-
 export function createContext<T>(
   defaultValue: T,
   calculateChangedBits: ?(a: T, b: T) => number,

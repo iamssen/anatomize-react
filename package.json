@@ -52,6 +52,7 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
+    "@types/react": "^16.4.6",
     "flow-bin": "^0.76.0"
   },
   "flow": "flow",

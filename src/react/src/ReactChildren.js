@@ -16,8 +16,6 @@ import {
 import {isValidElement, cloneAndReplaceKey} from './ReactElement';
 import ReactDebugCurrentFrame from './ReactDebugCurrentFrame';
 
-var __DEV__ = 'development';
-
 const SEPARATOR = '.';
 const SUBSEPARATOR = ':';
 
@@ -126,15 +124,7 @@ function traverseAllChildrenImpl(
           case REACT_ELEMENT_TYPE:
           case REACT_PORTAL_TYPE:
             invokeCallback = true;
-            break;
-          default:
-            console.log('???');
-            break;
         }
-        break;
-      default:
-        console.log('???');
-        break;
     }
   }
 

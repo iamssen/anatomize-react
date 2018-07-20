@@ -11,8 +11,6 @@ import {REACT_ELEMENT_TYPE} from 'shared/ReactSymbols';
 
 import ReactCurrentOwner from './ReactCurrentOwner';
 
-var __DEV__ = 'development';
-
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
 const RESERVED_PROPS = {

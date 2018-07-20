@@ -12,8 +12,6 @@ import type {ReactElement} from 'shared/ReactElementType';
 import describeComponentFrame from 'shared/describeComponentFrame';
 import getComponentName from 'shared/getComponentName';
 
-var __DEV__ = 'development';
-
 const ReactDebugCurrentFrame = {};
 
 let currentlyValidatingElement = (null: null | ReactElement);

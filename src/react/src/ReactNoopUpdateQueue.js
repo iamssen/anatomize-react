@@ -7,8 +7,6 @@
 
 import warningWithoutStack from 'shared/warningWithoutStack';
 
-var __DEV__ = 'development';
-
 const didWarnStateUpdateForUnmountedComponent = {};
 
 function warnNoop(publicInstance, callerName) {

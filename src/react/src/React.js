@@ -33,8 +33,6 @@ import {
 } from './ReactElementValidator';
 import ReactSharedInternals from './ReactSharedInternals';
 
-var __DEV__ = 'development';
-
 const React = {
   Children: {
     map,

@@ -20,8 +20,6 @@ import {
   REACT_PLACEHOLDER_TYPE,
 } from 'shared/ReactSymbols';
 
-var __DEV__ = 'development';
-
 function getComponentName(type: mixed): string | null {
   if (type == null) {
     // Host root, text node or just invalid type.
@@ -55,9 +53,6 @@ function getComponentName(type: mixed): string | null {
       return 'StrictMode';
     case REACT_PLACEHOLDER_TYPE:
       return 'Placeholder';
-    default:
-      console.log('???');
-      break;
   }
   if (typeof type === 'object') {
     switch (type.$$typeof) {
@@ -71,9 +66,6 @@ function getComponentName(type: mixed): string | null {
         return functionName !== ''
           ? `ForwardRef(${functionName})`
           : 'ForwardRef';
-      default:
-        console.log('???');
-        break;
     }
   }
   return null;

@@ -15,8 +15,6 @@ import ReactSharedInternals from 'shared/ReactSharedInternals';
  * same logic and follow the same code paths.
  */
 
-var __DEV__ = 'development';
-
 let warning = warningWithoutStack;
 
 if (__DEV__) {

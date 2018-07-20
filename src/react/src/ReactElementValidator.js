@@ -30,8 +30,6 @@ import ReactDebugCurrentFrame, {
   setCurrentlyValidatingElement,
 } from './ReactDebugCurrentFrame';
 
-var __DEV__ = 'development';
-
 let propTypesMisspellWarningShown;
 
 if (__DEV__) {
@@ -55,7 +53,7 @@ function getSourceInfoErrorAddendum(elementProps) {
     elementProps.__source !== undefined
   ) {
     const source = elementProps.__source;
-    const fileName = source.fileName.replace(/^.*[\\/]/, '');
+    const fileName = source.fileName.replace(/^.*[\\\/]/, '');
     const lineNumber = source.lineNumber;
     return '\n\nCheck your code at ' + fileName + ':' + lineNumber + '.';
   }

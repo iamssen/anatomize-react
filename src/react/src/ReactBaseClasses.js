@@ -10,8 +10,6 @@ import lowPriorityWarning from 'shared/lowPriorityWarning';
 
 import ReactNoopUpdateQueue from './ReactNoopUpdateQueue';
 
-var __DEV__ = 'development';
-
 const emptyObject = {};
 if (__DEV__) {
   Object.freeze(emptyObject);

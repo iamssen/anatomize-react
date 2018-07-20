@@ -9,8 +9,6 @@ import assign from 'object-assign';
 import ReactCurrentOwner from './ReactCurrentOwner';
 import ReactDebugCurrentFrame from './ReactDebugCurrentFrame';
 
-var __DEV__ = 'development';
-
 const ReactSharedInternals = {
   ReactCurrentOwner,
   // Used by renderers to avoid bundling object-assign twice in UMD bundles:

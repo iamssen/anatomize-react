@@ -17,8 +17,6 @@
  * will remain to ensure logic does not differ in production.
  */
 
-var __DEV__ = 'development';
-
 let validateFormat = () => {};
 
 if (__DEV__) {

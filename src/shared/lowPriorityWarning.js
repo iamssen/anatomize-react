@@ -21,8 +21,6 @@
 
 let lowPriorityWarning = function() {};
 
-var __DEV__ = 'development';
-
 if (__DEV__) {
   const printWarning = function(format, ...args) {
     let argIndex = 0;

@@ -1,11 +1,11 @@
 const path = require('path');
+const fs = require('fs');
 
 module.exports = {
   resolve: {
-    alias: {
-      'react': path.resolve(__dirname, 'src/react'),
-      'shared': path.resolve(__dirname, 'src/shared'),
-      'test': path.resolve(__dirname, 'src/test'),
-    }
-  }
-}
+    alias: fs.readdirSync('./packages').reduce((alias, name) => {
+      alias[name] = path.resolve(__dirname, './packages/' + name);
+      return alias;
+    }, {}),
+  },
+};

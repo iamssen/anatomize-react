@@ -7,6 +7,8 @@
  * @flow
  */
 
+'use strict';
+
 const React = require('./src/React');
 
 // TODO: decide on the top-level export form.
